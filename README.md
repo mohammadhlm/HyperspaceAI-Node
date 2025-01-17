@@ -32,3 +32,47 @@ GitHub： http://github.com/hyperspaceai
 完成所有活动： 定期检查并完成平台要求的各项活动，以维持和提升您的节点评分。
 
 注意：该项目对 RAM 和计算资源的需求较高，依赖用户共享 RAM 进行数据计算。如果您的设备性能较低，请谨慎参与，以免影响设备运行。
+
+#.Linux CLI 节点 （VPS）
+系统要求
+最低配置：
+
+4GB 内存，2 个虚拟 CPU
+推荐配置：
+
+8GB 内存，4 个虚拟 CPU
+
+使用 Docker 运行：
+一键运行脚本
+```
+curl -O https://raw.githubusercontent.com/ziqing888/HyperspaceAI-Node/refs/heads/main/start_aios.sh && chmod +x start_aios.sh && ./start_aios.sh
+```
+按照提示输入私钥即可
+
+## 有用的命令
+查看日志：
+```
+docker logs -f aios-container
+```
+查看积分：
+```
+docker exec -it aios-container /app/aios-cli hive points
+```
+查看私钥：
+```
+docker exec -it aios-container /app/aios-cli hive whoami
+```
+## 项目结束后
+停止 Docker 容器：
+```
+docker stop aios-container
+```
+删除 Docker 容器：
+```
+docker rm aios-container
+```
+删除 Docker 镜像：
+```
+docker rmi kartikhyper/aios
+```
+
