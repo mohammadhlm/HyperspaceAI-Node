@@ -33,7 +33,7 @@ GitHub： http://github.com/hyperspaceai
 
 注意：该项目对 RAM 和计算资源的需求较高，依赖用户共享 RAM 进行数据计算。如果您的设备性能较低，请谨慎参与，以免影响设备运行。
 
-#.Linux CLI 节点 （VPS）
+# .Linux CLI 节点 （VPS）
 系统要求
 最低配置：
 
