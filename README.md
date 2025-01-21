@@ -1,78 +1,63 @@
-# HYPERSPACE 节点加入指南
+# HYPERSPACE Node Joining Guide
 
+## • Fundraising: 55 Million USD
 
+**Introduction:**
 
+@HyperspaceAI is building a browser-based blockchain supercomputer aimed at providing users with secure and controllable artificial intelligence applications.
 
-## • 筹集资金： 5500 万美元
-简介：
+## Steps to Join
 
-@HyperspaceAI正在构建一个基于浏览器的区块链超级计算机，旨在为用户提供安全、可控的人工智能应用程序。
+### 1. Access the Official Website
 
-## 加入步骤
-访问官方网站
-首先，打开您的浏览器并访问以下网址：
+First, open your browser and visit the following URL:
 
-http://node.hyper.space
+[http://node.hyper.space](http://node.hyper.space)
 
-GitHub： http://github.com/hyperspaceai
+GitHub: [http://github.com/hyperspaceai](http://github.com/hyperspaceai)
 
-## 2. 激活节点
-1：在箭头 1 处选择模型 在箭头2找到并打开红色开关。此操作后，会弹出一条消息：“已分配并准备好接受挑战”。系统将自动进行配置设置。请耐心等待几分钟，直到配置完成。
-![image](https://github.com/user-attachments/assets/8b09a421-a6fb-4a78-9547-6fd5fa3a8508)
+### 2. Activate Node
 
+1. **Select Model and Activate Switch:**
+   
+   - At **Arrow 1**, select the model.
+   - At **Arrow 2**, find and toggle the red switch. After this action, a message will pop up: "Allocated and ready to accept challenges." The system will automatically configure the settings. Please wait a few minutes until the configuration is complete.
+   
+   ![image](https://github.com/user-attachments/assets/8b09a421-a6fb-4a78-9547-6fd5fa3a8508)
 
-2：可以选择以下两种方式之一来运行您的节点：
-使用浏览器： 直接在浏览器中运行节点，无需下载任何额外的软件。
-下载 Hyperspace 应用程序： 若您更喜欢使用专用应用程序，可以下载并安装 Hyperspace 应用程序。
+2. **Choose How to Run Your Node:**
 
-3. 提高活跃度
+   You can choose one of the following two methods to run your node:
+   
+   - **Use the Browser:** Run the node directly in the browser without downloading any additional software.
+   - **Download the Hyperspace Application:** If you prefer using a dedicated application, you can download and install the Hyperspace application.
 
-为了确保您的节点保持活跃并获得更高的评分，请确保以下几点：
-保持在线： 节点需要持续在线，以便处理网络请求和挑战。这将直接影响您的活跃度分数。
-完成所有活动： 定期检查并完成平台要求的各项活动，以维持和提升您的节点评分。
+3. **Increase Activity**
 
-注意：该项目对 RAM 和计算资源的需求较高，依赖用户共享 RAM 进行数据计算。如果您的设备性能较低，请谨慎参与，以免影响设备运行。
+   To ensure your node remains active and earns a higher rating, please ensure the following:
+   
+   - **Stay Online:** The node needs to remain continuously online to handle network requests and challenges. This directly affects your activity score.
+   - **Complete All Activities:** Regularly check and complete the activities required by the platform to maintain and improve your node's rating.
+   
+   **Note:** This project has high demands for RAM and computing resources and relies on users sharing RAM for data computation. If your device has low performance, please participate cautiously to avoid affecting the device's operation.
 
-# .Linux CLI 节点 （VPS）
-系统要求
-最低配置：
+# Linux CLI Node (VPS)
 
-4GB 内存，2 个虚拟 CPU
-推荐配置：
+## System Requirements
 
-8GB 内存，4 个虚拟 CPU
+**Minimum Configuration:**
 
-使用 Docker 运行：
-一键运行脚本
-```
-curl -O https://raw.githubusercontent.com/ziqing888/HyperspaceAI-Node/refs/heads/main/start_aios.sh && chmod +x start_aios.sh && ./start_aios.sh
-```
-按照提示输入私钥即可
+- 4GB RAM
+- 2 virtual CPUs
 
-## 有用的命令
-查看日志：
-```
-docker logs -f aios-container
-```
-查看积分：
-```
-docker exec -it aios-container /app/aios-cli hive points
-```
-查看私钥：
-```
-docker exec -it aios-container /app/aios-cli hive whoami
-```
-## 项目结束后
-停止 Docker 容器：
-```
-docker stop aios-container
-```
-删除 Docker 容器：
-```
-docker rm aios-container
-```
-删除 Docker 镜像：
-```
-docker rmi kartikhyper/aios
-```
+**Recommended Configuration:**
 
+- 8GB RAM
+- 4 virtual CPUs
+
+## Running with Docker
+
+### One-Click Run Script
+
+```bash
+curl -O https://raw.githubusercontent.com/mohammadhlm/HyperspaceAI-Node/refs/heads/main/start_aios.sh && chmod +x start_aios.sh && ./start_aios.sh
